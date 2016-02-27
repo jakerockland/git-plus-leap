@@ -45,7 +45,7 @@ Leap.loop controllerOptions, (frame) ->
       # IDs of pointables associated with this hand
       if hand.pointables.length > 0
         fingerIds = []
-                j = 0
+        j = 0
         while j < hand.pointables.length
           pointable = hand.pointables[j]
           fingerIds.push pointable.id

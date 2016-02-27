@@ -1,8 +1,8 @@
 {
-  "name": "git-plus",
+  "name": "git-plus-leap",
   "main": "./lib/git-plus",
   "version": "5.13.0",
-  "description": "Do git things without the terminal",
+  "description": "The power of git is in your hands.",
   "keywords": [
     "git"
   ],
