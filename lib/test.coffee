@@ -1,6 +1,6 @@
 leap = require './leap'
 
-module.exports = class LeapLoop
+class LeapLoop
   init: ->
     console.log 'hello world!'
     @activate()
@@ -107,3 +107,5 @@ module.exports = class LeapLoop
           i++
       # Store frame for motion functions
       previousFrame = frame
+
+module.exports = LeapLoop
