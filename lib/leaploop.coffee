@@ -69,23 +69,28 @@ class leaploop
           #   else
           #     console.log 'git revert' # counterclockwise circle
           #     break
-          if gesture.type == 'swipe'
+          console.log gesture #if gesture.type is "swipe" #and (gesture.state is "stop")
+          if (gesture.type is "swipe" and gesture.state is "stop")
             #Classify swipe as either horizontal or vertical
             isHorizontal = Math.abs(gesture.direction[0]) > Math.abs(gesture.direction[1])
             #Classify as right-left or up-down
             if isHorizontal
               if gesture.direction[0] > 0
                 console.log 'git push' # right swipe
-                break
+                atom.commands.dispatch(document.querySelector('atom-text-editor'), 'git-plus-leap:push')
+                #break
               else
                 console.log 'git pull' # left swipe
-                break
+                atom.commands.dispatch(document.querySelector('atom-text-editor'), 'git-plus-leap:pull')
+                #break
             else
               #vertical
               if gesture.direction[1] > 0
                 console.log 'git commit' # up swipe
+                atom.commands.dispatch(document.querySelector('atom-text-editor'), 'git-plus-leap:commit-all')
               else
                 console.log 'git add' # down swipe
+                atom.commands.dispatch(document.querySelector('atom-text-editor'), 'git-plus-leap:add-all')
           i++
 
       # Store frame for motion functions
