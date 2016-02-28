@@ -1,12 +1,15 @@
-# Git-Plus package ![Build Status](https://travis-ci.org/akonwi/git-plus-leap.svg?branch=5.5.0)
+# Git++ package
 
-[![endorse](https://api.coderwall.com/akonwi/endorsecount.png)](https://coderwall.com/akonwi)
-
-vim-fugitive like package for atom. make commits and other git things without the terminal
-
-![A screenshot of your spankin' package](https://raw.githubusercontent.com/akonwi/git-plus-leap/master/commit.gif)
+Make git commands through leap motion gestures. The power of git is in your hands.
 
 ## Usage
+
+# SWIPE COMMANDS:
+Swipe left: git pull
+Swipe right: git push
+Swipe down: git add
+Swipe up: git commit
+*More to be added soon*
 
 # IMPORTANT:
 Make sure your gitconfig file is configured. You must configure at least the `user.email` and `user.name` variables.
