@@ -8,6 +8,7 @@
   ],
   "activationCommands": {
     "atom-workspace": [
+<<<<<<< HEAD
       "git-plus-leap:menu",
       "git-plus-leap:add",
       "git-plus-leap:add-all",
@@ -52,6 +53,53 @@
       "git-plus-leap:merge",
       "git-plus-leap:merge-remote",
       "git-plus-leap:rebase"
+=======
+      "git-plus:menu",
+      "git-plus:add",
+      "git-plus:add-all",
+      "git-plus:add-all-and-commit",
+      "git-plus:add-all-commit-and-push",
+      "git-plus:add-and-commit",
+      "git-plus:delete-local-branch",
+      "git-plus:delete-remote-branch",
+      "git-plus:diff-all",
+      "git-plus:diff",
+      "git-plus:difftool",
+      "git-plus:log",
+      "git-plus:log-current-file",
+      "git-plus:status",
+      "git-plus:push",
+      "git-plus:pull",
+      "git-plus:pull-using-rebase",
+      "git-plus:remove",
+      "git-plus:remove-current-file",
+      "git-plus:checkout",
+      "git-plus:checkout-remote",
+      "git-plus:checkout-current-file",
+      "git-plus:checkout-all-files",
+      "git-plus:cherry-pick",
+      "git-plus:commit",
+      "git-plus:commit-all",
+      "git-plus:commit-amend",
+      "git-plus:fetch",
+      "git-plus:new-branch",
+      "git-plus:reset-head",
+      "git-plus:show",
+      "git-plus:stage-files",
+      "git-plus:stage-hunk",
+      "git-plus:stash-save",
+      "git-plus:stash-pop",
+      "git-plus:stash-keep",
+      "git-plus:stash-drop",
+      "git-plus:tags",
+      "git-plus:unstage-files",
+      "git-plus:init",
+      "git-plus:run",
+      "git-plus:merge",
+      "git-plus:merge-remote",
+      "git-plus:rebase",
+      "git-plus:record-audio"
+>>>>>>> f3224c39b3554d8b844b4c2e50e2318e92e107ad
     ]
   },
   "consumedServices": {
@@ -67,12 +115,17 @@
     "atom": ">0.50.0"
   },
   "dependencies": {
+<<<<<<< HEAD
     "leapjs": "0.6.4",
+=======
+    "atom-notify": "^1.1.0",
+    "atom-space-pen-views": "^2.0.3",
+    "flavored-path": "0.0.8",
+>>>>>>> f3224c39b3554d8b844b4c2e50e2318e92e107ad
     "fs-plus": "^2.2.0",
     "fuzzaldrin": "^1.2.0",
     "underscore-plus": "1.x",
-    "atom-space-pen-views": "^2.0.3",
-    "flavored-path": "0.0.8",
-    "atom-notify": "^1.1.0"
+    "wav": "^1.0.0",
+    "wav-encoder": "^1.0.0"
   }
 }
