@@ -38,7 +38,6 @@ class leaploop
               fingerIds.push pointable.id
               j++
           i++
-          console.log fingerIds
       # Display Pointable (finger and tool) object data
       if frame.pointables.length > 0
         fingerTypeMap = [
