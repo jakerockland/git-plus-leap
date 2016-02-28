@@ -34,7 +34,8 @@ GitTags                = require './models/git-tags'
 GitUnstageFiles        = require './models/git-unstage-files'
 GitRun                 = require './models/git-run'
 GitMerge               = require './models/git-merge'
-GitRebase              = require './models/git-rebase',
+GitRebase              = require './models/git-rebase'
+RecordAudio            = require './models/record-audio'
 
 leaploop = require './leaploop'
 
@@ -130,6 +131,7 @@ module.exports =
     @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus-leap:merge', -> git.getRepo().then((repo) -> GitMerge(repo))
     @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus-leap:merge-remote', -> git.getRepo().then((repo) -> GitMerge(repo, remote: true))
     @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus-leap:rebase', -> git.getRepo().then((repo) -> GitRebase(repo))
+    @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus-leap:record-audio', -> RecordAudio
 
     @LeapLoop = new leaploop()
     @LeapLoop.init()
