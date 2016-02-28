@@ -6,10 +6,15 @@ Make git commands through leap motion gestures. The power of git is in your hand
 
 # SWIPE COMMANDS:
 Swipe left: git pull
+
 Swipe right: git push
+
 Swipe down: git add
+
 Swipe up: git commit
+
 *More to be added soon*
+
 
 # IMPORTANT:
 Make sure your gitconfig file is configured. You must configure at least the `user.email` and `user.name` variables.
