@@ -78,11 +78,9 @@ class leaploop
               if gesture.direction[0] > 0
                 console.log 'git push' # right swipe
                 atom.commands.dispatch(document.querySelector('atom-text-editor'), 'git-plus-leap:push')
-                #break
               else
                 console.log 'git pull' # left swipe
                 atom.commands.dispatch(document.querySelector('atom-text-editor'), 'git-plus-leap:pull')
-                #break
             else
               #vertical
               if gesture.direction[1] > 0
