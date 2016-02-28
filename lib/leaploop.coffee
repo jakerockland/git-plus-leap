@@ -1,16 +1,7 @@
-<<<<<<< HEAD:lib/leaploop.coffee
 leapjs = require 'leapjs'
-=======
-Leap = require './leap'
->>>>>>> f3224c39b3554d8b844b4c2e50e2318e92e107ad:lib/test.coffee
 
 class leaploop
   init: ->
-<<<<<<< HEAD:lib/leaploop.coffee
-=======
-    console.log 'hello world!'
-    console.log Leap
->>>>>>> f3224c39b3554d8b844b4c2e50e2318e92e107ad:lib/test.coffee
     @activate()
 
   activate: ->
@@ -20,18 +11,7 @@ class leaploop
     # Setup Leap loop with frame callback function
     controllerOptions = enableGestures: true
 
-<<<<<<< HEAD:lib/leaploop.coffee
     leapjs.loop controllerOptions, (frame) ->
-=======
-    Leap.loop controllerOptions, (frame) ->
-      `var i`
-      `var pointable`
-      `var i`
-      `var scaleFactor`
-      `var rotationAngle`
-      `var rotationAxis`
-      `var translation`
->>>>>>> f3224c39b3554d8b844b4c2e50e2318e92e107ad:lib/test.coffee
       # Frame motion factors
       if previousFrame and previousFrame.valid
         translation = frame.translation(previousFrame)
