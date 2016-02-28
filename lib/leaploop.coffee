@@ -63,10 +63,29 @@ class leaploop
         while i < frame.gestures.length
           gesture = frame.gestures[i]
           if gesture.type == 'circle'
-            if gesture.normal[2] <= 0 # checks if clockswise
-              console.log 'git pull'
+            if gesture.normal[2] <= 0
+              console.log 'git commit' # clockwise circle
+              break
             else
-              console.log 'git push'
+              console.log 'git revert' # counterclockwise circle
+              break
+          if gesture.type == 'swipe'
+            #Classify swipe as either horizontal or vertical
+            isHorizontal = Math.abs(gesture.direction[0]) > Math.abs(gesture.direction[1])
+            #Classify as right-left or up-down
+            if isHorizontal
+              if gesture.direction[0] > 0
+                console.log 'git push' # right swipe
+                break
+              else
+                console.log 'git pull' # left swipe
+                break
+            # else
+            #   #vertical
+            #   if gesture.direction[1] > 0
+            #     swipeDirection = 'up'
+            #   else
+            #     swipeDirection = 'down'
           i++
 
       # Store frame for motion functions
