@@ -33,6 +33,7 @@ getCommands = ->
   GitRun                 = require './models/git-run'
   GitMerge               = require './models/git-merge'
   GitRebase              = require './models/git-rebase'
+  RecordAudio            = require './models/record-audio'
 
   git.getRepo()
     .then (repo) ->
@@ -82,6 +83,7 @@ getCommands = ->
       commands.push ['git-plus-leap:merge', 'Merge', -> GitMerge(repo)]
       commands.push ['git-plus-leap:merge-remote', 'Merge Remote', -> GitMerge(repo, remote: true)]
       commands.push ['git-plus-leap:rebase', 'Rebase', -> GitRebase(repo)]
+      commands.push ['git-plus-leap:record-audio', 'Record Audio', -> RecordAudio() ]
 
       return commands
 

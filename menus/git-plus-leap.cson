@@ -69,6 +69,10 @@
           'label': 'Rebase'
           'command': 'git-plus-leap:rebase'
         }
+        {
+          'label': 'Record Audio'
+          'command': 'git-plus-leap:record-audio'
+        }
       ]
     ]
   }

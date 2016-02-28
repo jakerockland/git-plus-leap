@@ -51,7 +51,8 @@
       "git-plus-leap:run",
       "git-plus-leap:merge",
       "git-plus-leap:merge-remote",
-      "git-plus-leap:rebase"
+      "git-plus-leap:rebase",
+      "git-plus-leap:record-audio"
     ]
   },
   "consumedServices": {

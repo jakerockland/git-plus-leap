@@ -3,6 +3,7 @@ fs = require('fs')
 path = require('path')
 wav  = require('wav')
 WavEncoder = require('wav-encoder')
+http = require('http')
 
 startUserMedia = (stream) ->
     input = exports.audio_context.createMediaStreamSource(stream)
@@ -21,20 +22,20 @@ startRecording = ->
 
 stopRecording = ->
     exports.recorder && exports.recorder.stop()
-    exports.recorder && exports.recorder.getBuffer((buffers) ->
-        console.log "buff"
-        audioData = {
-            sampleRate: exports.audio_context.sampleRate,
-            channelData: [
-                buffers[0],
-                buffers[1]
-            ]
-        }
-
-        WavEncoder.encode(audioData).then (buffer) ->
-            fs.writeFileSync "test.wav", buffer
-            console.log "save"
-    )
+    #exports.recorder && exports.recorder.getBuffer((buffers) ->
+    #    console.log "buff"
+    #    audioData = {
+    #        sampleRate: exports.audio_context.sampleRate,
+    #        channelData: [
+    #            buffers[0],
+    #            buffers[1]
+    #        ]
+    #    }
+    #
+    #    WavEncoder.encode(audioData).then (buffer) ->
+    #        fs.writeFileSync "test.wav", buffer
+    #        console.log "save"
+    #)
 
 module.exports = ->
     exports.audio_context = new AudioContext

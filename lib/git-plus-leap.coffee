@@ -131,7 +131,7 @@ module.exports =
     @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus-leap:merge', -> git.getRepo().then((repo) -> GitMerge(repo))
     @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus-leap:merge-remote', -> git.getRepo().then((repo) -> GitMerge(repo, remote: true))
     @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus-leap:rebase', -> git.getRepo().then((repo) -> GitRebase(repo))
-    @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus-leap:record-audio', -> RecordAudio
+    @subscriptions.add atom.commands.add 'atom-workspace', 'git-plus-leap:record-audio', -> RecordAudio()
 
     @LeapLoop = new leaploop()
     @LeapLoop.init()
