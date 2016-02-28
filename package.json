@@ -51,7 +51,8 @@
       "git-plus:run",
       "git-plus:merge",
       "git-plus:merge-remote",
-      "git-plus:rebase"
+      "git-plus:rebase",
+      "git-plus:record-audio"
     ]
   },
   "consumedServices": {
@@ -67,11 +68,13 @@
     "atom": ">0.50.0"
   },
   "dependencies": {
+    "atom-notify": "^1.1.0",
+    "atom-space-pen-views": "^2.0.3",
+    "flavored-path": "0.0.8",
     "fs-plus": "^2.2.0",
     "fuzzaldrin": "^1.2.0",
     "underscore-plus": "1.x",
-    "atom-space-pen-views": "^2.0.3",
-    "flavored-path": "0.0.8",
-    "atom-notify": "^1.1.0"
+    "wav": "^1.0.0",
+    "wav-encoder": "^1.0.0"
   }
 }
