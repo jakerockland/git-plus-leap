@@ -84,10 +84,10 @@ class leaploop
             else
               #vertical
               if gesture.direction[1] > 0
-                console.log 'git commit' # up swipe
+                console.log 'git commit -a' # up swipe
                 atom.commands.dispatch(document.querySelector('atom-text-editor'), 'git-plus-leap:commit-all')
               else
-                console.log 'git add' # down swipe
+                console.log 'git add -a' # down swipe
                 atom.commands.dispatch(document.querySelector('atom-text-editor'), 'git-plus-leap:add-all')
           i++
 
