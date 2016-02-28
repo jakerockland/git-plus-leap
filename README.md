@@ -1,10 +1,10 @@
-# Git-Plus package ![Build Status](https://travis-ci.org/akonwi/git-plus.svg?branch=5.5.0)
+# Git-Plus package ![Build Status](https://travis-ci.org/akonwi/git-plus-leap.svg?branch=5.5.0)
 
 [![endorse](https://api.coderwall.com/akonwi/endorsecount.png)](https://coderwall.com/akonwi)
 
 vim-fugitive like package for atom. make commits and other git things without the terminal
 
-![A screenshot of your spankin' package](https://raw.githubusercontent.com/akonwi/git-plus/master/commit.gif)
+![A screenshot of your spankin' package](https://raw.githubusercontent.com/akonwi/git-plus-leap/master/commit.gif)
 
 ## Usage
 
@@ -22,13 +22,13 @@ Also, the package currently favors an ssh setup that doesn't expect to be prompt
 Notifications will appear in a console output above the status bar.
 This view can be toggled by clicking the pin icon in the bottom right of the status bar.
 
-![screenshot](https://raw.githubusercontent.com/akonwi/git-plus/5.5.0/pin.png)
+![screenshot](https://raw.githubusercontent.com/akonwi/git-plus-leap/5.5.0/pin.png)
 
 ### Commands
 _Commands are accessible for keybindings by dasherizing the command title._
-> Git Add ==  `git-plus:add`
+> Git Add ==  `git-plus-leap:add`
 
-> Git Add All Commit And Push == `git-plus:add-all-commit-and-push`
+> Git Add All Commit And Push == `git-plus-leap:add-all-commit-and-push`
 
   __Note: This list is not exhaustive. And if what you want isn't a feature, You can use `Git Run` and enter the command__
 

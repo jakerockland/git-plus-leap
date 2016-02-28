@@ -53,7 +53,7 @@ class ListView extends SelectListView
       @mode = 'fetch'
       @execute name, '--prune'
     else if @mode is 'push'
-      pullOption = atom.config.get 'git-plus.pullBeforePush'
+      pullOption = atom.config.get 'git-plus-leap.pullBeforePush'
       @extraArgs = if pullOption?.includes '--rebase' then '--rebase' else ''
       unless pullOption? and pullOption is 'no'
         @pull(name)
@@ -71,7 +71,7 @@ class ListView extends SelectListView
     if extraArgs.length > 0
       args.push extraArgs
     args = args.concat([remote, @tag]).filter((arg) -> arg isnt '')
-    command = atom.config.get('git-plus.gitPath') ? 'git'
+    command = atom.config.get('git-plus-leap.gitPath') ? 'git'
     message = "#{@mode[0].toUpperCase()+@mode.substring(1)}ing..."
     startMessage = notifier.addInfo message, dismissable: true
     git.cmd(args, cwd: @repo.getWorkingDirectory())

@@ -49,7 +49,7 @@ module.exports = git =
       output = ''
       try
         new BufferedProcess
-          command: atom.config.get('git-plus.gitPath') ? 'git'
+          command: atom.config.get('git-plus-leap.gitPath') ? 'git'
           args: args
           options: options
           stdout: (data) -> output += data.toString()

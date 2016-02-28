@@ -1,6 +1,6 @@
 git = require '../git'
 LogListView = require '../views/log-list-view'
-LogViewURI = 'atom://git-plus:log'
+LogViewURI = 'atom://git-plus-leap:log'
 
 module.exports = (repo, {onlyCurrentFile}={}) ->
   atom.workspace.addOpener (uri) ->

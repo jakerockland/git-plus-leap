@@ -1,6 +1,6 @@
 _ = require 'underscore-plus'
 {$, $$, SelectListView} = require 'atom-space-pen-views'
-GitPlusCommands = require '../git-plus-commands'
+GitPlusCommands = require '../git-plus-leap-commands'
 GitInit = require '../models/git-init'
 fuzzyFilter = require('fuzzaldrin').filter
 module.exports =
@@ -41,7 +41,7 @@ class GitPaletteView extends SelectListView
         @panel.show()
         @focusFilterEditor()
       .catch (err) =>
-        (commands = []).push { name: 'git-plus:init', description: 'Init', func: -> GitInit() }
+        (commands = []).push { name: 'git-plus-leap:init', description: 'Init', func: -> GitInit() }
         @setItems(commands)
         @panel.show()
         @focusFilterEditor()

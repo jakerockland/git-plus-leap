@@ -1,29 +1,29 @@
 ## Changelog
 
 ### 5.13.0
-- Add keyboard support for git log view (@aki77)[PR#389](https://github.com/akonwi/git-plus/pull/389)
+- Add keyboard support for git log view (@aki77)[PR#389](https://github.com/akonwi/git-plus-leap/pull/389)
 
 ### 5.12.3
-- Fix [#387](https://github.com/akonwi/git-plus/issues/387)
-- Fix [#383](https://github.com/akonwi/git-plus/issues/383)
-- Fix [#369](https://github.com/akonwi/git-plus/issues/369)
+- Fix [#387](https://github.com/akonwi/git-plus-leap/issues/387)
+- Fix [#383](https://github.com/akonwi/git-plus-leap/issues/383)
+- Fix [#369](https://github.com/akonwi/git-plus-leap/issues/369)
 
 ### 5.12.1
-- Merge [pr #380](https://github.com/akonwi/git-plus/issues/380)
-- Merge [pr #381](https://github.com/akonwi/git-plus/issues/381)
- - Fixes [#372](https://github.com/akonwi/git-plus/issues/372)
-- Fix [#377](https://github.com/akonwi/git-plus/issues/377)
+- Merge [pr #380](https://github.com/akonwi/git-plus-leap/issues/380)
+- Merge [pr #381](https://github.com/akonwi/git-plus-leap/issues/381)
+ - Fixes [#372](https://github.com/akonwi/git-plus-leap/issues/372)
+- Fix [#377](https://github.com/akonwi/git-plus-leap/issues/377)
 
 ### 5.12.0
 - Add `Merge Remote` command (@crshd)
-- Fix [#370](https://github.com/akonwi/git-plus/issues/370)
-- Fix [#371](https://github.com/akonwi/git-plus/issues/371)
-- Remove code that 'fixed' [#90](https://github.com/akonwi/git-plus/issues/90) because there are still gaps to figure out
+- Fix [#370](https://github.com/akonwi/git-plus-leap/issues/370)
+- Fix [#371](https://github.com/akonwi/git-plus-leap/issues/371)
+- Remove code that 'fixed' [#90](https://github.com/akonwi/git-plus-leap/issues/90) because there are still gaps to figure out
 
 ### 5.11.0
-- Fix [#355](https://github.com/akonwi/git-plus/issues/355)
-- Fix [#354](https://github.com/akonwi/git-plus/issues/354)
-- Fix [#358](https://github.com/akonwi/git-plus/issues/358)
+- Fix [#355](https://github.com/akonwi/git-plus-leap/issues/355)
+- Fix [#354](https://github.com/akonwi/git-plus-leap/issues/354)
+- Fix [#358](https://github.com/akonwi/git-plus-leap/issues/358)
 
 ### 5.9.0
 - Fix a bug where the commit amend file didn't show the status of the previous
@@ -349,12 +349,12 @@ rather than the 'buffer' property in the TextBuffer.
 
 ### 4.1.0
 
-- Return of git-plus command palette
+- Return of git-plus-leap command palette
 
 ### 4.0.0
 
 - THIS IS THE LAST PUSH OF NEW FEATURES. I'm stopping development of this package because I don't have time and on top of that, I don't use atom anymore
-- Adding new command called 'Git Run'. This allows you to run git commands like in the command line. i.e. `add --all .` or `clone git@github.com:akonwi/git-plus my-git-plus`
+- Adding new command called 'Git Run'. This allows you to run git commands like in the command line. i.e. `add --all .` or `clone git@github.com:akonwi/git-plus-leap my-git-plus-leap`
 - Removed Git-Plus command palette and merged all commands into atom command palette
 - all commands are now accessible via keymappings
 - Add setting to change message display time in seconds

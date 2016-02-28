@@ -4,7 +4,7 @@ GitLog = require '../../lib/models/git-log'
 LogListView = require '../../lib/views/log-list-view'
 
 view = new LogListView
-logFileURI = 'atom://git-plus:log'
+logFileURI = 'atom://git-plus-leap:log'
 
 describe "GitLog", ->
   beforeEach ->

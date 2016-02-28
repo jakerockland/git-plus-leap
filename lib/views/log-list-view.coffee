@@ -6,17 +6,17 @@ git = require '../git'
 GitShow = require '../models/git-show'
 
 amountOfCommitsToShow = ->
-  atom.config.get('git-plus.amountOfCommitsToShow')
+  atom.config.get('git-plus-leap.amountOfCommitsToShow')
 
 module.exports =
 class LogListView extends View
   @content: ->
-    @div class: 'git-plus-log', tabindex: -1, =>
-      @table id: 'git-plus-commits', outlet: 'commitsListView'
+    @div class: 'git-plus-leap-log', tabindex: -1, =>
+      @table id: 'git-plus-leap-commits', outlet: 'commitsListView'
 
-  getURI: -> 'atom://git-plus:log'
+  getURI: -> 'atom://git-plus-leap:log'
 
-  getTitle: -> 'git-plus: Log'
+  getTitle: -> 'git-plus-leap: Log'
 
   initialize: ->
     @skipCommits = 0

@@ -23,7 +23,7 @@ commitTemplate = 'foobar'
 commitResolution = Promise.resolve 'commit success'
 
 setupMocks = ->
-  atom.config.set 'git-plus.openInPane', false
+  atom.config.set 'git-plus-leap.openInPane', false
   spyOn(currentPane, 'activate')
   spyOn(commitPane, 'destroy').andCallThrough()
   spyOn(commitPane, 'splitRight')
@@ -72,7 +72,7 @@ setupMocks = ->
 describe "GitCommit", ->
   describe "a regular commit", ->
     beforeEach ->
-      atom.config.set "git-plus.openInPane", false
+      atom.config.set "git-plus-leap.openInPane", false
       commitResolution = Promise.resolve 'commit success'
       setupMocks()
       waitsForPromise ->
@@ -161,7 +161,7 @@ describe "GitCommit", ->
 
   describe "a failing commit", ->
     beforeEach ->
-      atom.config.set "git-plus.openInPane", false
+      atom.config.set "git-plus-leap.openInPane", false
       commitResolution = Promise.reject 'commit error'
       setupMocks()
       waitsForPromise ->
@@ -174,11 +174,11 @@ describe "GitCommit", ->
         expect(notifier.addError).toHaveBeenCalledWith 'commit error'
         expect(commitPane.destroy).not.toHaveBeenCalled()
 
-  ## atom.config.get('git-plus.openInPane') is always false inside the module
-  # describe "when the `git-plus.openInPane` setting is true", ->
+  ## atom.config.get('git-plus-leap.openInPane') is always false inside the module
+  # describe "when the `git-plus-leap.openInPane` setting is true", ->
   #   it "defaults to opening to the right", ->
   #     setupMocks()
-  #     atom.config.set 'git-plus.openInPane', false
+  #     atom.config.set 'git-plus-leap.openInPane', false
   #     waitsForPromise -> GitCommit(repo).then ->
   #       expect(commitPane.splitRight).toHaveBeenCalled()
 #

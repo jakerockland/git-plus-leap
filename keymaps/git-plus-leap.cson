@@ -1,0 +1,31 @@
+# Keybindings require three things to be fully defined: A selector that is
+# matched against the focused element, the keystroke and the command to
+# execute.
+#
+# Below is a basic keybinding which registers on all platforms by applying to
+# the root workspace element.
+
+# For more detailed documentation see
+# https://atom.io/docs/latest/advanced/keymaps
+
+'.platform-darwin':
+  'cmd-shift-h': 'git-plus-leap:menu'
+  'cmd-shift-c': 'git-plus-leap:commit'
+  'cmd-shift-a s': 'git-plus-leap:status'
+  'cmd-shift-a a': 'git-plus-leap:add-all-and-commit'
+  'cmd-shift-a p': 'git-plus-leap:add-all-commit-and-push'
+
+'.platform-win32, .platform-linux':
+  'ctrl-shift-h': 'git-plus-leap:menu'
+  'ctrl-shift-x': 'git-plus-leap:commit'
+  'ctrl-shift-a s': 'git-plus-leap:status'
+  'ctrl-shift-a a': 'git-plus-leap:add-all-and-commit'
+  'ctrl-shift-a p': 'git-plus-leap:add-all-commit-and-push'
+
+'.platform-darwin atom-text-editor':
+  'cmd-shift-a': 'git-plus-leap:add'
+  'cmd-shift-a c': 'git-plus-leap:add-and-commit'
+
+'.platform-win32 atom-text-editor, .platform-linux atom-text-editor':
+  'ctrl-shift-a': 'git-plus-leap:add'
+  'ctrl-shift-a c': 'git-plus-leap:add-and-commit'

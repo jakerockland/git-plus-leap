@@ -6,7 +6,7 @@ module.exports =
     message: ''
 
     @content: ->
-      @div class: 'git-plus info-view', =>
+      @div class: 'git-plus-leap info-view', =>
         @pre class: 'output', defaultMessage
 
     initialize: ->
@@ -24,7 +24,7 @@ module.exports =
       @show()
       @timeout = setTimeout =>
         @hide()
-      , atom.config.get('git-plus.messageTimeout') * 1000
+      , atom.config.get('git-plus-leap.messageTimeout') * 1000
 
     toggle: ->
       clearTimeout @timeout if @timeout

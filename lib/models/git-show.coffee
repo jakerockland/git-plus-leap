@@ -12,7 +12,7 @@ showCommitFilePath = (objectHash) ->
 
 showObject = (repo, objectHash, file) ->
   args = ['show', '--color=never', '--format=full']
-  args.push '--word-diff' if atom.config.get 'git-plus.wordDiff'
+  args.push '--word-diff' if atom.config.get 'git-plus-leap.wordDiff'
   args.push objectHash
   args.push '--', file if file?
 
@@ -25,8 +25,8 @@ prepFile = (text, objectHash) ->
 
 showFile = (objectHash) ->
   disposables = new CompositeDisposable
-  if atom.config.get('git-plus.openInPane')
-    splitDirection = atom.config.get('git-plus.splitPane')
+  if atom.config.get('git-plus-leap.openInPane')
+    splitDirection = atom.config.get('git-plus-leap.splitPane')
     atom.workspace.getActivePane()["split#{splitDirection}"]()
   atom.workspace
     .open(showCommitFilePath(objectHash), activatePane: true)

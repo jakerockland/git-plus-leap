@@ -115,7 +115,7 @@ describe "Git-Plus git module", ->
           expect(output).toContain('unknown option')
 
     it "returns a promise that is fulfilled with stderr on success", ->
-      initDir = 'git-plus-test-dir' + Math.random()
+      initDir = 'git-plus-leap-test-dir' + Math.random()
       cloneDir = initDir + '-clone'
       waitsForPromise ->
         # TODO: Use something that doesn't require permissions and can run within atom

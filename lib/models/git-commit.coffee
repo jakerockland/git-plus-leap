@@ -63,8 +63,8 @@ cleanup = (currentPane, filePath) ->
   fs.unlink filePath
 
 showFile = (filePath) ->
-  if atom.config.get('git-plus.openInPane')
-    splitDirection = atom.config.get('git-plus.splitPane')
+  if atom.config.get('git-plus-leap.openInPane')
+    splitDirection = atom.config.get('git-plus-leap.splitPane')
     atom.workspace.getActivePane()["split#{splitDirection}"]()
   atom.workspace.open filePath
 
