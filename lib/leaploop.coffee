@@ -69,7 +69,7 @@ class leaploop
           #   else
           #     console.log 'git revert' # counterclockwise circle
           #     break
-          console.log gesture #if gesture.type is "swipe" #and (gesture.state is "stop")
+          # console.log gesture #if gesture.type is "swipe" #and (gesture.state is "stop")
           if (gesture.type is "swipe" and gesture.state is "stop")
             #Classify swipe as either horizontal or vertical
             isHorizontal = Math.abs(gesture.direction[0]) > Math.abs(gesture.direction[1])
