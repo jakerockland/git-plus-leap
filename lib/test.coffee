@@ -1,8 +1,9 @@
-leap = require './leap'
+Leap = require './leap'
 
 class LeapLoop
   init: ->
     console.log 'hello world!'
+    console.log Leap
     @activate()
 
   activate: ->
@@ -20,7 +21,7 @@ class LeapLoop
     #     digits = 1
     #   '(' + vector[0].toFixed(digits) + ', ' + vector[1].toFixed(digits) + ', ' + vector[2].toFixed(digits) + ')'
 
-    leap.loop controllerOptions, (frame) ->
+    Leap.loop controllerOptions, (frame) ->
       `var i`
       `var pointable`
       `var i`
@@ -48,7 +49,7 @@ class LeapLoop
           # IDs of pointables associated with this hand
           if hand.pointables.length > 0
             fingerIds = []
-              j = 0
+            j = 0
             while j < hand.pointables.length
               pointable = hand.pointables[j]
               fingerIds.push pointable.id
